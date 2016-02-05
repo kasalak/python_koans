@@ -45,12 +45,12 @@ class AboutDictionaries(Koan):
         self.assertEqual(2, len(babel_fish.values()))
         self.assertEqual(1, 'one' in babel_fish.keys())
         self.assertEqual(False, 'two' in babel_fish.values())
-        self.assertEqual(True, 'uno' in babel_fish.keys())
-        self.assertEqual(False, 'dos' in babel_fish.values())
+        self.assertEqual(False, 'uno' in babel_fish.keys())
+        self.assertEqual(True, 'dos' in babel_fish.values())
 
     def test_making_a_dictionary_from_a_sequence_of_keys(self):
         cards = {}.fromkeys(('red warrior', 'green elf', 'blue valkyrie', 'yellow dwarf', 'confused looking zebra'), 42)
 
-        self.assertEqual(__, len(cards))
-        self.assertEqual(__, cards['green elf'])
-        self.assertEqual(__, cards['yellow dwarf'])
+        self.assertEqual(5, len(cards))
+        self.assertEqual(42, cards['green elf'])
+        self.assertEqual(42, cards['yellow dwarf'])
