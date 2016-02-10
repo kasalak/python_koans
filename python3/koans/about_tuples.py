@@ -6,7 +6,7 @@ from runner.koan import *
 class AboutTuples(Koan):
     def test_creating_a_tuple(self):
         count_of_three =  (1, 2, 5)
-        self.assertEqual(__, count_of_three[2])
+        self.assertEqual(5, count_of_three[2])
 
     def test_tuples_are_immutable_so_item_assignment_is_not_possible(self):
         count_of_three =  (1, 2, 5)
@@ -22,7 +22,7 @@ class AboutTuples(Koan):
 
     def test_tuples_are_immutable_so_appending_is_not_possible(self):
         count_of_three =  (1, 2, 5)
-        with self.assertRaises(___): count_of_three.append("boom")
+        with self.assertRaises(1, 2, 5): count_of_three.append("boom")
 
         # Tuples are less flexible than lists, but faster.
 
@@ -63,6 +63,3 @@ class AboutTuples(Koan):
 
         self.assertEqual(__, locations[2][0])
         self.assertEqual(__, locations[0][1][2])
-
-
-
